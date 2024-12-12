@@ -202,7 +202,7 @@ export default {
 		// 获取请求参数中的 ns
 		const ns = url.searchParams.get('ns'); 
 		const hostname = url.searchParams.get('hubhost') || url.hostname;
-		const hostTop = hostname.split('_')[0]; // 获取主机名的第一部分
+		const hostTop = hostname.split('-')[0]; // 获取主机名的第一部分
 
 		let checkHost; // 在这里定义 checkHost 变量
 		// 如果存在 ns 参数，优先使用它来确定 hub_host
